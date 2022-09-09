@@ -37,8 +37,12 @@ h1 {
 }
 
 .done {
-  text-decoration: line-through;
-  color: red;
+  color: rgb(36, 179, 36);
+}
+
+.checkmark {
+  color: rgb(22, 139, 22);
+  font-size: 25px;
 }
 
 .todo {
@@ -46,7 +50,7 @@ h1 {
   display: flex;
   align-items: center;
   padding-left: 5%;
-  padding-right: 50%;
+  padding-right: 5%;
   font-family: 'Parisienne', cursive;
   font-size: 34px;
   border-bottom: 2px dashed rgb(194, 154, 187);

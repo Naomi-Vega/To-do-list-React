@@ -68,7 +68,7 @@ import React, { useState } from "react";
       {todos.map((todo, index) => (
         <div key={todo} className="todo">
           <div className="checkbox" onClick={() => completeTodo(index)}>
-            {todo.isCompleted && <span>&#x2714;</span>}
+            {todo.isCompleted && <span className="checkmark">&#x2714;</span>}
           </div>
           <div className={todo.isCompleted ? "done" : ""}>{todo.todo}</div>
           <div className="delete" onClick={() => deleteTodo(index)}>
