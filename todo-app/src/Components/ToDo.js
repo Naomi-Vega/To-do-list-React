@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function TodosComponent() {
+  function TodosComponent() {
   const [currentTodo, setCurrentTodo] = useState("");
   const [todos, setTodos] = useState([
     {
@@ -16,6 +16,16 @@ function TodosComponent() {
       isCompleted: false
     }
   ]);
+
+//  const fetchData = async (url) => {
+//    const response = await fetch(url);
+//    const json = await response.json();
+//    return json;
+//  }
+//  
+//  const drawTodos = async () => {
+//    const todos = await fetchData("https://jsonplaceholder.typicode.com/todos");
+
 
   function createNewTodo(currentTodo) {
     let todosArray = [...todos];
@@ -41,7 +51,7 @@ function TodosComponent() {
   return (
     <div>
       <h1> My To-Do List </h1>
-      <input 
+      <input
         className="todo-input"
         value={currentTodo}
         onChange={e => {
@@ -67,9 +77,10 @@ function TodosComponent() {
         </div>
       ))}
       <div className="items">
-      {todos.length > 0 && `${todos.length} items`}
+        {todos.length > 0 && `${todos.length} items`}
       </div>
     </div>
   );
 }
+
 export default TodosComponent;

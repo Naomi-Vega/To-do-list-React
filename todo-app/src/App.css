@@ -1,5 +1,13 @@
 .App {
+  border: 3px solid white;
+  margin: 50px 300px 200px 300px;
+  background-color: white;
+}
 
+body {
+  background-image: url("https://wallpapercave.com/wp/SULpu2M.jpg");
+  background-size: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -11,20 +19,21 @@ h1 {
   color: white;
   padding: 30px 0px;
   margin-top: 0;
+  font-family: 'Parisienne', cursive;
 }
 
 .todo-input {
-  font-size: 24px;
+  font-size: 18px;
   color: rgb(117, 116, 116);
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 32px;
+  padding: 10px;
+  padding-right: 90px;
   border-radius: 1rem;
-  padding: 1rem;
   border: none;
   background: #d9d9d9;
-  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .done {
@@ -36,23 +45,25 @@ h1 {
   margin: 32px 0px;
   display: flex;
   align-items: center;
-  padding-left: 40%;
-  padding-right: 40%;
-  font-size: 24px;
+  padding-left: 5%;
+  padding-right: 50%;
+  font-family: 'Parisienne', cursive;
+  font-size: 34px;
+  border-bottom: 2px dashed rgb(194, 154, 187);
 }
 
 .items {
-  padding-left: 40%;
+  padding-left: 5%;
+  font-family: 'Dosis', sans-serif;
 }
 
 .checkbox {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   margin-right: 10px;
   cursor: pointer;
   background: #d9d9d9;
-  font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
