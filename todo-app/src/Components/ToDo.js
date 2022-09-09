@@ -5,14 +5,14 @@ function TodosComponent() {
   const [todos, setTodos] = useState([
     {
       todo: "bake a cake",
-      isCompleted: true
+      isCompleted: false
     },
     {
       todo: "go for a walk",
       isCompleted: false
     },
     {
-      todo: "contribute a web development tutorial on Enlight",
+      todo: "night coffee",
       isCompleted: false
     }
   ]);
@@ -40,7 +40,8 @@ function TodosComponent() {
 
   return (
     <div>
-      <input
+      <h1> My To-Do List </h1>
+      <input 
         className="todo-input"
         value={currentTodo}
         onChange={e => {
@@ -65,7 +66,9 @@ function TodosComponent() {
           </div>
         </div>
       ))}
+      <div className="items">
       {todos.length > 0 && `${todos.length} items`}
+      </div>
     </div>
   );
 }
